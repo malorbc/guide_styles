@@ -5,3 +5,11 @@
 .contenu P {
     @apply font-light leading-6;
 }
+
+.rotated{
+    transform: rotate(180deg);
+}
+
+.menu-item:hover .icone {
+    @apply rotate-12 scale-150 fill-bleu-500;
+}
