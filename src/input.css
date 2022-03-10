@@ -15,7 +15,7 @@
 }
 
 .nav-open{
-    @apply transition-all
+    @apply transition-all overflow-hidden
 }
 
 .nav-closed{
@@ -27,7 +27,7 @@
 }
 
 .content-open{
-    @apply ml-60 transition-all
+    @apply ml-0 sm:ml-60 transition-all
 }
 
 .burger:hover svg{

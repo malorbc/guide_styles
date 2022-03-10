@@ -537,12 +537,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1.5rem;
 }
 
-.w-full {
-  width: 100%;
+.w-screen {
+  width: 100vw;
 }
 
 .w-3 {
   width: 0.75rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-1\/2 {
@@ -793,6 +797,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .nav-open {
+  overflow: hidden;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -821,10 +826,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .content-open {
-  margin-left: 15rem;
+  margin-left: 0px;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+@media (min-width: 640px) {
+  .content-open {
+    margin-left: 15rem;
+  }
 }
 
 .burger:hover svg {
