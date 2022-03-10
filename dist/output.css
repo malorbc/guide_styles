@@ -484,6 +484,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 1rem;
 }
 
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.left-auto {
+  left: auto;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -855,7 +871,35 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 640px) {
+  .sm\:top-4 {
+    top: 1rem;
+  }
+
+  .sm\:left-4 {
+    left: 1rem;
+  }
+
+  .sm\:right-0 {
+    right: 0px;
+  }
+
+  .sm\:right-auto {
+    right: auto;
+  }
+
+  .sm\:bottom-auto {
+    bottom: auto;
+  }
+
+  .sm\:z-0 {
+    z-index: 0;
+  }
+
   .sm\:w-60 {
     width: 15rem;
+  }
+
+  .sm\:w-auto {
+    width: auto;
   }
 }
