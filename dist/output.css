@@ -700,9 +700,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
-.text-bleu-500 {
+.text-jaune-500 {
   --tw-text-opacity: 1;
-  color: rgb(84 115 182 / var(--tw-text-opacity));
+  color: rgb(224 170 74 / var(--tw-text-opacity));
 }
 
 .text-gray-700 {
@@ -715,9 +715,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
-.text-jaune-500 {
+.text-bleu-500 {
   --tw-text-opacity: 1;
-  color: rgb(224 170 74 / var(--tw-text-opacity));
+  color: rgb(84 115 182 / var(--tw-text-opacity));
 }
 
 .underline {
