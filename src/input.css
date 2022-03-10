@@ -13,3 +13,19 @@
 .menu-item:hover .icone {
     @apply rotate-12 scale-150 fill-bleu-500;
 }
+
+.nav-open{
+    @apply transition-all
+}
+
+.nav-closed{
+    @apply transition-all -translate-x-60
+}
+
+.content-closed{
+    @apply ml-0 transition-all;
+}
+
+.content-open{
+    @apply ml-60 transition-all
+}

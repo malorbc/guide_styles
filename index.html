@@ -26,10 +26,28 @@
 </head>
 
 <body>
-    <div class="flex flex-row" x-data="{ open: false, open2: false, open3: false}"
+    <div class="flex flex-row" x-data="{ open: false, open2: false, open3: false, navOpen: false}"
         x-on:click.outside="{open: false, open2: false}">
-        <div class="w-60 h-screen shadow-md bg-white px-1 fixed">
-            <p class="pt-4 px-6 font-bowlby text-bleu-500">Groupe 5D</p>
+        <div @click="navOpen = !navOpen" x-show="!navOpen"
+            class="burger fixed top-4 bg-white p-4 left-4 cursor-pointer rounded-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-bleu-500" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </div>
+        <div :class="{'nav-open' : navOpen, 'nav-closed': !navOpen}"
+            class="w-60 h-screen shadow-md bg-white px-1 fixed">
+
+            <div @click="navOpen = !navOpen"
+                class="py-4 px-6 flex flex-row justify-between items-center hover:bg-gray-100 transition duration-300 ease-in-out cursor-pointer">
+                <p class="font-bowlby text-bleu-500">Groupe 5D</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-bleu-500" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
             <ul class="relative">
                 <li @click="open = !open" class="relative menu-item" tabindex="0" aria-label="Sample Tabs">
                     <a role="nav" aria-selected="true" aria-controls="panel-1" id="tab-1"
@@ -161,7 +179,7 @@
                 </li>
             </ul>
         </div>
-        <div class="w-full ml-60">
+        <div :class="{'content-open' : navOpen, 'content-closed': !navOpen}" class="w-full">
             <div class="bg-bleu-500 py-6 px-6 shadow-md">
                 <h1 class="text-3xl font-bold text-gray-100 text-center">Guide de styles du groupe 5D</h1>
             </div>
