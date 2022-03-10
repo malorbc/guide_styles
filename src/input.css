@@ -19,7 +19,7 @@
 }
 
 .nav-closed{
-    @apply transition-all -translate-x-60
+    @apply transition-all -translate-x-full sm:-translate-x-60
 }
 
 .content-closed{
@@ -28,4 +28,8 @@
 
 .content-open{
     @apply ml-60 transition-all
+}
+
+.burger:hover svg{
+    @apply scale-125
 }
