@@ -43,7 +43,6 @@
         </div>
         <div :class="{'nav-open' : navOpen, 'nav-closed': !navOpen}"
             class="w-screen sm:w-60 h-screen shadow-md bg-white px-1 fixed">
-
             <div @click="navOpen = !navOpen"
                 class="py-4 px-6 flex flex-row justify-between items-center hover:bg-gray-100 transition duration-300 ease-in-out cursor-pointer">
                 <p class="font-bowlby text-bleu-500">Groupe 5D</p>
@@ -198,17 +197,19 @@
                     dolores ratione rerum unde officia aliquam eius officiis voluptatibus saepe in, expedita asperiores
                     natus molestiae non. Temporibus sit corrupti aliquid dolor, incidunt eos.</p>
                 <div class="py-6">
-                    <h2 class="text-2xl border-l-8 border-bleu-500 pl-6">La marque</h2>
-                    <h3 class="text-xl pt-8 text-jaune-500">Nom et slogan</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate odit repudiandae facere esse
-                        labore magnam eius, voluptates eum natus exercitationem, suscipit veritatis eveniet aut ad
-                        accusantium optio perferendis laudantium explicabo eaque error? Voluptatibus tempore voluptas
-                        molestiae assumenda ullam. Quidem, dolore mollitia iusto, dolorum, ipsam nostrum est ad minima
-                        error maxime voluptatum veniam voluptatibus illum necessitatibus adipisci dignissimos nisi.
-                        Exercitationem deserunt, reiciendis, magni ipsum, quae nulla atque perspiciatis porro
-                        voluptatibus dolores iusto vitae? Assumenda delectus facilis ex dolorem unde vel similique
-                        eligendi aspernatur ea fuga, quibusdam, exercitationem voluptate reprehenderit culpa. Laborum
-                        repellat magni culpa iusto amet officiis nesciunt. Velit, animi perspiciatis?</p>
+                    <h2 class="text-2xl border-l-8 flex items-center border-bleu-500 pl-4"><svg
+                            xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3 icone transition-all text-bleu-500"
+                            viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                                clip-rule="evenodd" />
+                        </svg>La marque</h2>
+                    <h3 class="text-xl pt-8 text-jaune-500">I. Notre équipe</h3>
+                    <p>L’équipe des 5D est une équipe projet d'étudiants qui travaillent en coopération dans la création
+                        numérique. Fondée en octobre 2021, notre groupe a réuni cinq étudiants passionnés par le
+                        numérique aux profils et aux parcours bien différents. Aujourd’hui, notre équipe est composée de
+                        4 membres aux compétences pluridisciplinaires pour créer des livrables de la meilleure qualité
+                        possible grâce aux talents de chacun de nos membres.</p>
                     <div class="flex flex-row mt-6">
                         <div class="w-1/2 bg-green-100 rounded-sm px-6 py-6 mr-2">
                             <p class=" underline underline-offset-4">Faites :</p>
