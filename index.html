@@ -29,7 +29,7 @@
     <div class="flex flex-row" x-data="{ open: false, open2: false, open3: false, navOpen: false}"
         x-on:click.outside="{open: true, open2: true, open3: true}">
         <div @click="navOpen = !navOpen"
-            class="burger fixed bottom-4 z-10 sm:z-0 sm:top-4 sm:bottom-auto bg-white p-4 right-4 sm:left-4 sm:right-auto cursor-pointer rounded-lg shadow-lg transition-all">
+            class="burger fixed z-10 sm:z-0 top-4 bg-white p-4 left-4 cursor-pointer rounded-lg shadow-lg transition-all">
             <svg x-show="!navOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-bleu-500 transition-all"
                 fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -74,20 +74,20 @@
                     <ul x-show="open" x-collapse id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1"
                         class="relative accordion-collapse collapse">
                         <li class="relative">
-                            <a href="#nom-et-slogan"
+                            <a href="#nom-et-slogan" @click="navOpen = !navOpen"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Nom
                                 et slogan</a>
                         </li>
                         <li class="relative">
-                            <a href="#missions"
+                            <a href="#missions" @click="navOpen = !navOpen"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Missions</a>
                         </li>
                         <li class="relative">
-                            <a href="#personnalite"
+                            <a href="#personnalite" @click="navOpen = !navOpen"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Personnalité</a>
                         </li>
                         <li class="relative">
-                            <a href="#promesses"
+                            <a href="#promesses" @click="navOpen = !navOpen"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Promesses</a>
                         </li>
                     </ul>
@@ -113,28 +113,28 @@
                     </a>
                     <ul x-show="open2" x-collapse class="relative accordion-collapse collapse">
                         <li class="relative">
-                            <a href="#logo"
+                            <a href="#logo" @click="navOpen = !navOpen"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Logo</a>
                         </li>
                         <li class="relative">
-                            <a href="#couleur"
+                            <a href="#couleur" @click="navOpen = !navOpen"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Couleur</a>
                         </li>
                         <li class="relative">
-                            <a href="#typographie"
+                            <a href="#typographie" @click="navOpen = !navOpen"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Typographie</a>
                         </li>
                         <li class="relative">
-                            <a href="#iconographie"
+                            <a href="#iconographie" @click="navOpen = !navOpen"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Iconographie</a>
                         </li>
                         <li class="relative">
-                            <a href="#images-et-illustration"
+                            <a href="#images-et-illustration" @click="navOpen = !navOpen"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Images
                                 et illustration</a>
                         </li>
                         <li class="relative">
-                            <a href="#!"
+                            <a href="#avatars" @click="navOpen = !navOpen"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Avatars</a>
                         </li>
                     </ul>
@@ -157,26 +157,26 @@
                     </a>
                     <ul x-show="open3" x-collapse class="relative accordion-collapse collapse">
                         <li class="relative">
-                            <a href="#!"
+                            <a href="#!" @click="navOpen = !navOpen"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Langue
                                 et grammaire</a>
                         </li>
                         <li class="relative">
-                            <a href="#!"
+                            <a href="#!" @click="navOpen = !navOpen"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Vocabulaire</a>
                         </li>
                         <li class="relative">
-                            <a href="#!"
+                            <a href="#!" @click="navOpen = !navOpen"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Nom
                                 propre</a>
                         </li>
                         <li class="relative">
-                            <a href="#!"
+                            <a href="#!" @click="navOpen = !navOpen"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Style
                                 d'écriture</a>
                         </li>
                         <li class="relative">
-                            <a href="#!"
+                            <a href="#!" @click="navOpen = !navOpen"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Voix
                                 et ton</a>
                         </li>
@@ -210,15 +210,15 @@
                         numérique aux profils et aux parcours bien différents. Aujourd’hui, notre équipe est composée de
                         4 membres aux compétences pluridisciplinaires pour créer des livrables de la meilleure qualité
                         possible grâce aux talents de chacun de nos membres.</p>
-                    <div class="flex flex-row mt-6">
-                        <div class="w-1/2 bg-green-100 rounded-sm px-6 py-6 mr-2">
+                    <div class="flex flex-col md:flex-row mt-6">
+                        <div class="md:w-1/2 bg-green-100 rounded-sm px-6 py-6 md:mr-2">
                             <p class=" underline underline-offset-4">Faites :</p>
                             <p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati minima ad
                                 porro vel
                                 corporis et sapiente reprehenderit ullam eaque quidem!</p>
                             <img src="https://picsum.photos/500">
                         </div>
-                        <div class="w-1/2 bg-red-100 rounded-sm px-6 py-6 ml-2 flex flex-col justify-between">
+                        <div class="md:w-1/2 bg-red-100 rounded-sm px-6 py-6 md:ml-2 flex flex-col justify-between">
                             <div>
                                 <p>Ne faites pas :</p>
                                 <p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
