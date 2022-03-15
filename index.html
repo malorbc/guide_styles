@@ -27,7 +27,7 @@
 
 <body>
     <div class="flex flex-row" x-data="{ open: false, open2: false, open3: false, navOpen: false}"
-        x-on:click.outside="{open: false, open2: false}">
+        x-on:click.outside="{open: true, open2: true, open3: true}">
         <div @click="navOpen = !navOpen"
             class="burger fixed bottom-4 z-10 sm:z-0 sm:top-4 sm:bottom-auto bg-white p-4 right-4 sm:left-4 sm:right-auto cursor-pointer rounded-lg shadow-lg transition-all">
             <svg x-show="!navOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-bleu-500 transition-all"
@@ -74,20 +74,20 @@
                     <ul x-show="open" x-collapse id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1"
                         class="relative accordion-collapse collapse">
                         <li class="relative">
-                            <a href="#!"
+                            <a href="#nom-et-slogan"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Nom
                                 et slogan</a>
                         </li>
                         <li class="relative">
-                            <a href="#!"
+                            <a href="#missions"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Missions</a>
                         </li>
                         <li class="relative">
-                            <a href="#!"
+                            <a href="#personnalite"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Personnalité</a>
                         </li>
                         <li class="relative">
-                            <a href="#!"
+                            <a href="#promesses"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Promesses</a>
                         </li>
                     </ul>
@@ -113,23 +113,23 @@
                     </a>
                     <ul x-show="open2" x-collapse class="relative accordion-collapse collapse">
                         <li class="relative">
-                            <a href="#!"
+                            <a href="#logo"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Logo</a>
                         </li>
                         <li class="relative">
-                            <a href="#!"
+                            <a href="#couleur"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Couleur</a>
                         </li>
                         <li class="relative">
-                            <a href="#!"
+                            <a href="#typographie"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Typographie</a>
                         </li>
                         <li class="relative">
-                            <a href="#!"
+                            <a href="#iconographie"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Iconographie</a>
                         </li>
                         <li class="relative">
-                            <a href="#!"
+                            <a href="#images-et-illustration"
                                 class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out">Images
                                 et illustration</a>
                         </li>
@@ -204,7 +204,7 @@
                                 d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
                                 clip-rule="evenodd" />
                         </svg>La marque</h2>
-                    <h3 class="text-xl pt-8 text-jaune-500">I. Notre équipe</h3>
+                    <h3 class="text-xl pt-8 text-jaune-500" id="nom-et-slogan">I. Nom et slogan</h3>
                     <p>L’équipe des 5D est une équipe projet d'étudiants qui travaillent en coopération dans la création
                         numérique. Fondée en octobre 2021, notre groupe a réuni cinq étudiants passionnés par le
                         numérique aux profils et aux parcours bien différents. Aujourd’hui, notre équipe est composée de
@@ -229,7 +229,7 @@
 
                         </div>
                     </div>
-                    <h3 class="text-xl pt-8 text-jaune-500">Missions</h3>
+                    <h3 class="text-xl pt-8 text-jaune-500" id="missions">Missions</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate odit repudiandae facere esse
                         labore magnam eius, voluptates eum natus exercitationem, suscipit veritatis eveniet aut ad
                         accusantium optio perferendis laudantium explicabo eaque error? Voluptatibus tempore voluptas
@@ -240,7 +240,7 @@
                         eligendi aspernatur ea fuga, quibusdam, exercitationem voluptate reprehenderit culpa. Laborum
                         repellat magni culpa iusto amet officiis nesciunt. Velit, animi perspiciatis?</p>
 
-                    <h3 class="text-xl pt-8 text-jaune-500">Personnalité</h3>
+                    <h3 class="text-xl pt-8 text-jaune-500" id="personnalite">Personnalité</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate odit repudiandae facere esse
                         labore magnam eius, voluptates eum natus exercitationem, suscipit veritatis eveniet aut ad
                         accusantium optio perferendis laudantium explicabo eaque error? Voluptatibus tempore voluptas
@@ -251,7 +251,7 @@
                         eligendi aspernatur ea fuga, quibusdam, exercitationem voluptate reprehenderit culpa. Laborum
                         repellat magni culpa iusto amet officiis nesciunt. Velit, animi perspiciatis?</p>
 
-                    <h3 class="text-xl pt-8 text-jaune-500">Promesses</h3>
+                    <h3 class="text-xl pt-8 text-jaune-500" id="promesses">Promesses</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate odit repudiandae facere esse
                         labore magnam eius, voluptates eum natus exercitationem, suscipit veritatis eveniet aut ad
                         accusantium optio perferendis laudantium explicabo eaque error? Voluptatibus tempore voluptas

@@ -33,3 +33,7 @@
 .burger:hover svg{
     @apply scale-125
 }
+
+html { 
+    scroll-behavior: smooth; 
+  }
