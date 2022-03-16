@@ -1440,6 +1440,10 @@ h4::before {
   .sm\:w-60 {
     width: 15rem;
   }
+
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1449,6 +1453,10 @@ h4::before {
 
   .md\:ml-2 {
     margin-left: 0.5rem;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
   }
 
   .md\:w-1\/4 {
@@ -1463,6 +1471,10 @@ h4::before {
     flex-direction: row;
   }
 
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
   .md\:justify-around {
     justify-content: space-around;
   }
@@ -1470,5 +1482,9 @@ h4::before {
   .md\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+
+  .md\:pr-6 {
+    padding-right: 1.5rem;
   }
 }

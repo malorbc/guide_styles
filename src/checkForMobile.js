@@ -6,7 +6,7 @@ function initMobile() {
     open4: true,
     open5: true,
     open5: true,
-    navOpen: true,
+    navOpen: window.innerWidth < 640 ? false : true,
     isMobile: false,
     checkIsMobile: function () {
       this.isMobile = window.innerWidth < 640;
