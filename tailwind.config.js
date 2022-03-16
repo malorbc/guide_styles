@@ -27,7 +27,10 @@ module.exports = {
 					'800': '#644611',
 					'900': '#342409'
 				},
-				gris: '#eff0f0'
+				gris: '#eff0f0',
+				bleufonce: {
+					'500': '#36364E'
+				}
 			}
 		},
 		fontFamily: {
