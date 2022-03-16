@@ -3,47 +3,71 @@
 @tailwind utilities;
 
 .contenu P {
-    @apply font-light leading-6;
+  @apply font-light leading-6;
 }
 
-.rotated{
-    transform: rotate(180deg);
+.rotated {
+  transform: rotate(180deg);
 }
 
 .menu-item:hover .icone {
-    @apply rotate-12 scale-150 fill-bleu-500;
+  @apply rotate-12 scale-150 fill-bleu-500;
 }
 
-.nav-open{
-    @apply transition-all overflow-hidden
+.nav-open {
+  @apply transition-all overflow-hidden overflow-y-auto;
 }
 
-.nav-closed{
-    @apply transition-all -translate-x-full sm:-translate-x-60
+.nav-closed {
+  @apply transition-all -translate-x-full sm:-translate-x-60;
 }
 
-.content-closed{
-    @apply ml-0 transition-all;
+.content-closed {
+  @apply ml-0 transition-all;
 }
 
-.content-open{
-    @apply ml-0 sm:ml-60 transition-all
+.content-open {
+  @apply ml-0 sm:ml-60 transition-all;
 }
 
-.burger:hover svg{
-    @apply scale-125
+.burger:hover svg {
+  @apply scale-125;
 }
 
 .liste-item {
-    @apply before:bg-bleu-500 before:h-1 before:w-3 before:inline-block before:mr-4 before:mb-1;
+  @apply before:bg-bleu-500 before:h-1 before:w-3 before:inline-block before:mr-4 before:mb-1;
 }
 
-html { 
-    scroll-behavior: smooth; 
+html {
+  scroll-behavior: smooth;
 }
 
-  /* Toggle A */
+/* Toggle A */
 input:checked ~ .dot {
-    transform: translateX(100%);
-    @apply bg-bleu-500 border-2 border-bleu-500
+  transform: translateX(100%);
+  @apply bg-bleu-500 border-2 border-bleu-500;
+}
+
+h4 {
+  @apply before:bg-bleufonce-500 before:h-1 before:w-3 before:inline-block before:mr-4 flex items-center;
+}
+
+.lien-normal {
+  @apply text-bleu-500 decoration-bleu-500 underline underline-offset-4;
+}
+
+.lien-footer {
+  @apply text-white decoration-white underline underline-offset-4;
+}
+
+.lien-menu {
+  @apply flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out;
+}
+
+.lien-menu-parent {
+  @apply menu-item flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out cursor-pointer;
+}
+
+[x-cloak] {
+  display: none !important;
 }
