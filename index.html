@@ -36,7 +36,7 @@
 
         <!-- Menu burger -->
         <div x-cloak @click="navOpen = !navOpen"
-            class="burger fixed z-10 sm:z-0 top-4 bg-white p-4 left-4 cursor-pointer rounded-lg shadow-lg transition-all">
+            class="burger fixed z-10 sm:z-0 top-4 bg-white p-4 right-4 cursor-pointer rounded-lg shadow-lg transition-all">
             <svg x-show="!navOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-bleu-500 transition-all"
                 fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -53,7 +53,7 @@
         <div x-cloak :class="{'nav-open' : navOpen, 'nav-closed': !navOpen}"
             class="w-screen sm:w-60 h-screen shadow-md bg-white px-1 fixed">
             <div @click="navOpen = !navOpen"
-                class="py-4 px-6 flex flex-row justify-between items-center hover:bg-gray-100 transition duration-300 ease-in-out cursor-pointer">
+                class="py-8 md:py-4 px-6 flex flex-row justify-between items-center hover:bg-gray-100 transition duration-300 ease-in-out cursor-pointer">
                 <p class="font-bowlby text-bleu-500">Groupe 5D</p>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-bleu-500" viewBox="0 0 20 20"
                     fill="currentColor">
@@ -140,9 +140,9 @@
                                 class="lien-menu">Images
                                 et illustration</a>
                         </li>
-                        <li class="relative">
+                        <!-- <li class="relative">
                             <a href="#avatars" @click="if(isMobile){navOpen = !navOpen}" class="lien-menu">Avatars</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </li>
                 <li x-on:click="open3 = !open3" class="relative menu-item" tabindex="0">
@@ -168,7 +168,7 @@
                         </li>
                         <li class="relative">
                             <a href="#vocabulaire" @click="if(isMobile){navOpen = !navOpen}"
-                                class="lien-menu">Vocabulaire</a>
+                                class="lien-menu">Vocabulaire et noms propres</a>
                         </li>
                         <li class="relative">
                             <a href="#noms-propres" @click="if(isMobile){navOpen = !navOpen}" class="lien-menu">Nom
@@ -179,10 +179,10 @@
                                 class="lien-menu">Style
                                 d'écriture</a>
                         </li>
-                        <li class="relative">
+                        <!-- <li class="relative">
                             <a href="#voix-et-ton" @click="if(isMobile){navOpen = !navOpen}" class="lien-menu">Voix
                                 et ton</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </li>
                 <li x-on:click="open4 = !open4" class="relative menu-item" tabindex="0">
@@ -254,13 +254,12 @@
                 <h1 class="text-3xl font-bold text-gray-100 text-center">Guide de styles du groupe 5D</h1>
             </div>
             <div class="max-w-4xl m-auto py-10 contenu p-6">
-                <p>Introduction ipsum dolor sit amet consectetur adipisicing elit. Ratione
-                    officia
-                    impedit commodi aut.
-                    Tenetur
-                    necessitatibus cum aliquam? Vitae, non minus atque molestiae dolore aliquam. Nemo maxime sint
-                    dolores ratione rerum unde officia aliquam eius officiis voluptatibus saepe in, expedita asperiores
-                    natus molestiae non. Temporibus sit corrupti aliquid dolor, incidunt eos.</p>
+                <p>Vous êtes intéressé par le groupe des 5D et vous souhaitez produire du contenu en lien avec nos
+                    produits ? Vous souhaitez en savoir plus sur notre charte graphique, nos méthodes de rédaction et de
+                    design ? Ce guide de style vous expliquera, à travers différentes sections et exemples, comment
+                    utiliser la charte graphique du groupe des 5D, comment rédiger des contenus pertinents et adaptés...
+                    Bonne lecture.</p>
+                <p class="mt-6"><span class="italic">L'équipe du groupe des 5D.</span></p>
 
                 <!-- La marque -->
                 <div class="py-6">
@@ -303,7 +302,8 @@
                         nom des 5D, notre équipe était à l'origine composée de 5 membres aux rôles biens divers mais
                         avec un point en commun, un nom de métiers du numérique commençant par la lettre D, de designeur
                         à développeur. Par ailleurs, notre groupe propose des services correspondant à cinq corps de
-                        métiers avec comme initiale le D : développeur web, développeur mobile, designer sonore, UI/UX,
+                        métiers avec comme initiale le D&nbsp: développeur web, développeur mobile, designer sonore,
+                        UI/UX,
                         graphique.
                     </p>
                     <p class="mt-2">
@@ -366,11 +366,11 @@
                         <img class="w-1/2 md:w-1/4" src="src/medias/logo-5D-jaune.png" />
                         <img class="w-1/2 md:w-1/4" src="src/medias/logo-5D-noir.png" />
                     </div>
-                    <p>Le logo 5D peut être décliné en 3 tailles différentes : </p>
+                    <p>Le logo 5D peut être décliné en 3 tailles différentes&nbsp: </p>
                     <ul class="font-light leading-6">
-                        <li class="liste-item"><span class="font-semibold">petite</span> : 32 par 32 pixels</li>
-                        <li class="liste-item"><span class="font-semibold">moyenne</span> : 64 par 64 pixels</li>
-                        <li class="liste-item"><span class="font-semibold">grande</span> : 128 par 128 pixels</li>
+                        <li class="liste-item"><span class="font-semibold">petite</span>&nbsp: 32 par 32 pixels</li>
+                        <li class="liste-item"><span class="font-semibold">moyenne</span>&nbsp: 64 par 64 pixels</li>
+                        <li class="liste-item"><span class="font-semibold">grande</span>&nbsp: 128 par 128 pixels</li>
                     </ul>
                     <div x-data="{couleur: false}">
                         <div class="flex flex-col md:flex-row items-center justify-center md:justify-around">
@@ -414,7 +414,7 @@
                         before:block before:w-full before:absolute before:h-2 before:bottom-1 before:-z-10
                         before:bg-bleu-500">
                             #5473B6</span>. Ce bleu doit
-                        toujours être utilisé tel quel, ou respecter une déclinaison de la liste suivante :
+                        toujours être utilisé tel quel, ou respecter une déclinaison de la liste suivante&nbsp:
                     </p>
                     <div class="flex flex-wrap justify-between py-6">
                         <div class="m-2 w-16 h-16 bg-bleu-50 font-thin justify-center items-center flex rounded-lg">50
@@ -451,7 +451,7 @@
                     <p>La couleur secondaire ou couleur d’accent est le jaune Rob Roy <span class="inline-block relative
                         before:block before:w-full before:absolute before:h-2 before:bottom-1 before:-z-10
                         before:bg-jaune-500">#E0AA4A</span>. Idem, il doit être
-                        utilisé tel quel ou respecter une déclinaison de la liste suivante :</p>
+                        utilisé tel quel ou respecter une déclinaison de la liste suivante&nbsp:</p>
                     <div class="flex flex-wrap justify-between py-6">
                         <div class="m-2 w-16 h-16 bg-jaune-50 font-thin justify-center items-center flex rounded-lg">50
                         </div>
@@ -489,8 +489,8 @@
                         </div>
                     </div>
                     <p>Le bleu foncé Space Cadet <span class="inline-block relative
-                        before:block before:w-full before:absolute before:h-6 before:left-0 before:-z-10
-                        before:bg-bleufonce-500 text-white px-4">#36364E</span> constitue la dernière couleur de
+                        before:block before:w-full before:absolute before:h-6 before:-z-10
+                        before:bg-bleufonce-500 text-white ">#36364E</span> constitue la dernière couleur de
                         l’harmonie
                         colorée de
                         5D,
@@ -611,9 +611,9 @@
                         de maximiser la lisibilité. Elle est utilisée pour les titres de niveaux inférieurs ainsi que
                         pour les textes courants.
                     </p>
-                    <p><span class="font-bowlby text-2xl">Titres : BOWLBY ONE SC - 24px</span></p>
-                    <p><span class="text-xl font-bold">Sous titres : Rubik Bold - 20px</span></p>
-                    <p><span class="text-base">Paragraphes et corps de texte : Rubik - 16px</span></p>
+                    <p><span class="font-bowlby text-2xl">Titres&nbsp: BOWLBY ONE SC - 24px</span></p>
+                    <p><span class="text-xl font-bold">Sous titres&nbsp: Rubik Bold - 20px</span></p>
+                    <p><span class="text-base">Paragraphes et corps de texte&nbsp: Rubik - 16px</span></p>
                     <p class="mt-6"></p>
                     Bowlby One SC et Rubik sont des typographies sans-serif, ce qui rend la lecture plus agréable et
                     plus confortable. Ces polices sont sous licence Open Font License. Elles peuvent être utilisées
@@ -628,11 +628,7 @@
                         Les icônes que nous avons choisi sont en accord avec l’harmonie colorée définie dans notre
                         charte graphique.
 
-                        <span class="text-red-500 font-bold">TODO : Vous pouvez télécharger le pack d’icônes créées par
-                            5D ici.
-                        </span>
-
-                        Les icônes doivent toujours être accompagnées d’un label explicatif :
+                        Les icônes doivent toujours être accompagnées d’un label explicatif&nbsp:
 
                     </p>
                     <div class="flex flex-col md:flex-row mt-6">
@@ -652,8 +648,8 @@
                         5D utilise des aplats de couleurs et un style qui s’apparente au “flat-design” pour la plupart
                         de ses contenus, notamment pour les avatars du produit Criminial. Rien ne vous empêche
                         d’utiliser d’autres styles graphiques, mais cela doit rester cohérent et adapté avec le reste du
-                        projet : même univers, même atmosphère… Ainsi, nous vous encourageons à utiliser des
-                        illustrations en format vectoriel (svg). Les images doivent toujours être de bonne qualité :
+                        projet&nbsp: même univers, même atmosphère… Ainsi, nous vous encourageons à utiliser des
+                        illustrations en format vectoriel (svg). Les images doivent toujours être de bonne qualité&nbsp:
                     </p>
                     <div class="flex flex-col md:flex-row mt-6">
                         <div class="md:w-1/2 bg-green-100 rounded-sm px-6 py-6 md:mr-2">
@@ -668,7 +664,7 @@
 
                         </div>
                     </div>
-                    <h3 class="text-xl pt-8 text-red-500" id="avatars">VI. Les avatars</h3>
+                    <!-- <h3 class="text-xl pt-8 text-red-500" id="avatars">VI. Les avatars</h3> -->
                 </div>
 
                 <!-- Rédaction -->
@@ -790,22 +786,39 @@
                             </div>
                         </div>
                     </div>
-                    <h3 class="text-xl pt-8 text-jaune-500" id="vocabulaire">II. Vocabulaire</h3>
+                    <h3 class="text-xl pt-8 text-jaune-500" id="vocabulaire">II. Vocabulaire et noms propres</h3>
                     <p>Le vocabulaire doit rester simple, compréhensible et respecter les critères généraux d’écriture
                         pour le web. L’orthographe et la syntaxe doivent êtres soignées. Les phrases doivent êtres
                         simples et concises. Nous avons une palette de mots et expressions que nous employons
-                        régulièrement, quel que soit le support utilisé. Voici une liste non exhaustive : innovation,
+                        régulièrement, quel que soit le support utilisé. Voici une liste non exhaustive&nbsp:
+                        innovation,
                         imagination, changement, découverte, originalité, savoir-faire, technologie, technique,
                         application, produit, service, dispositif…</p>
-                    <h3 class="text-xl pt-8 text-jaune-500" id="noms-propres">III. Noms propres</h3>
-                    <p>Le groupe 5D développe plusieurs produits : Criminial, l’algorithme Sherbot. Ces noms doivent
-                        toujours être capitalisés et écrits correctement.</p>
-                    <h3 class="text-xl pt-8 text-jaune-500" id="style-d-ecriture">IV. Style d'écriture</h3>
+                    <p class="mt-2">Concernant les noms propres (les produits proposés par le groupe notamment),
+                        certaines règles
+                        sont à respecter. Le groupe 5D développe plusieurs produits&nbsp: Criminial, l’algorithme
+                        Sherbot. Ces noms
+                        doivent toujours être capitalisés et écrits correctement.</p>
+                    <h3 class="text-xl pt-8 text-jaune-500" id="style-d-ecriture">III. Style d'écriture</h3>
                     <p>Le registre de langue doit être courant. Criminial se voulant tout public, les registres soutenu,
                         familier et grossier sont proscrits. Ainsi tout le monde est susceptible de porter de
                         l’attention à nos différents moyens de communication. </p>
-                    <h3 class="text-xl pt-8 text-jaune-500" id="voix-et-ton">V. Voix et ton</h3>
-                    <p><span class="text-red-500 font-bold">TODO</span></p>
+                    <div class="flex flex-col md:flex-row my-6">
+                        <div class="md:w-1/2 bg-green-100 rounded-sm px-6 py-6 md:mr-2">
+                            <p class=" underline underline-offset-4 mb-2">Faites :</p>
+                            <p>Venez découvrir une narration interactive et intriguante, en vous rendant sur le site
+                                Criminial.</p>
+                        </div>
+                        <div class="md:w-1/2 bg-red-100 rounded-sm px-6 py-6 md:ml-2 flex flex-col justify-between">
+                            <div>
+                                <p class="mb-2">Ne faites pas :</p>
+                                <p>Viens voir notre nouvelle app Criminial juste ici. Ça parle de robots et de crime.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <h3 class="text-xl pt-8 text-jaune-500" id="voix-et-ton">V. Voix et ton</h3> -->
+                    <!-- <p><span class="text-red-500 font-bold">TODO</span></p> -->
                 </div>
 
                 <!-- Interactivité -->
@@ -829,9 +842,9 @@
                             before:bg-jaune-500">
                             #E0AA4A</span> et Space
                         Cadet <span class="inline-block relative
-                        before:block before:w-full before:absolute before:h-6 before:left-0 before:-z-10
-                        before:bg-bleufonce-500 text-white px-4">#36364E</span>.
-                        Voici comment est construit un bouton :
+                        before:block before:w-full before:absolute before:h-6 before:-z-10
+                        before:bg-bleufonce-500 text-white">#36364E</span>.
+                        Voici comment est construit un bouton&nbsp:
                     </p>
                     <div class="flex-col md:flex-row flex items-center my-12">
                         <div>
@@ -841,10 +854,10 @@
                             <img src="src/medias/bouton-04.png" class="" />
                         </div>
                     </div>
-                    <p>Un des éléments importants est la taille minimale du bouton : par soucis de facilité
+                    <p>Un des éléments importants est la taille minimale du bouton&nbsp: par soucis de facilité
                         d’utilisation, un bouton ne peut avoir une taille inférieure à 55 pixels s’il comporte du texte.
                         L'arrondi doit aussi être respecté.
-                        Voici un exemple de bonne et de mauvaise utilisation de bouton :</p>
+                        Voici un exemple de bonne et de mauvaise utilisation de bouton&nbsp:</p>
                     <div class="flex flex-col md:flex-row my-6">
                         <div class="md:w-1/2 bg-green-100 rounded-sm px-6 py-6 md:mr-2">
                             <p class=" underline underline-offset-4 mb-2">Faites :</p>
@@ -876,7 +889,7 @@
                     <img src="src/medias/formulaire.png" alt="" class="my-6 m-auto max-w-1/4">
                     <p>De la même manière que les boutons, les champs de formulaire sont uniformes dans tous les
                         produits du groupe des 5D; ainsi, leurs caractéristiques visuelles et fonctionnelles doivent
-                        toujours êtres conservées :</p>
+                        toujours êtres conservées&nbsp:</p>
                     <div class="flex flex-col md:flex-row my-6">
                         <div class="md:w-1/2 bg-green-100 rounded-sm px-6 py-6 md:mr-2">
                             <p class=" underline underline-offset-4 mb-2">Faites :</p>
@@ -900,7 +913,7 @@
                         </div>
                     </div>
                     <h3 class="text-xl pt-8 text-jaune-500" id="ambiance-sonore">III. Ambiance sonore</h3>
-                    <h4 class="font-bold text-bleufonce-500 mt-6">Clic sur les éléments</h4>
+                    <h4 class="font-bold text-bleufonce-500">Clic sur les éléments</h4>
                     <p>Le sound design issu des interactions de l’utilisateur avec les différents éléments présents est
                         dans une esthétique moderne et sobre. De cette manière, les interactions ne seront pas une
                         source de distraction pour le joueur et pourra également profiter de l’ambiance sonore s’il le
@@ -946,32 +959,44 @@
                             <p class="mb-4"><span class="text-white">Un site web réalisé dans le cadre d'un projet
                                     Rhizome.
                                     Retrouvez nous
-                                    sur les réseaux sociaux pour suivre l'avancée du projet :</span></p>
+                                    sur les réseaux sociaux pour suivre l'avancée du projet&nbsp:</span></p>
                             <div class="socials flex flex-row justify-around md:justify-between md:w-1/2">
-                                <svg role="img" viewBox="0 0 24 24" fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white">
-                                    <title>Discord</title>
-                                    <path
-                                        d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" />
-                                </svg>
-                                <svg role="img" viewBox="0 0 24 24" fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white">
-                                    <title>Instagram</title>
-                                    <path
-                                        d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
-                                </svg>
-                                <svg role="img" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-white"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <title>TikTok</title>
-                                    <path
-                                        d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
-                                </svg>
-                                <svg role="img" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-white"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <title>YouTube</title>
-                                    <path
-                                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                                </svg>
+                                <a href="https://discord.gg/yDpgfkwEPK"
+                                    class="text-white hover:text-jaune-500 transition-all">
+                                    <svg role="img" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg" class="h-6 w-6">
+                                        <title>Discord</title>
+                                        <path
+                                            d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" />
+                                    </svg>
+                                </a>
+                                <a href="https://instagram.com/criminial.rhizome?utm_medium=copy_link"
+                                    class="text-white hover:text-jaune-500 transition-all">
+                                    <svg role="img" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg" class="h-6 w-6">
+                                        <title>Instagram</title>
+                                        <path
+                                            d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                                    </svg>
+                                </a>
+                                <a href="https://www.tiktok.com/@criminial.rhizome"
+                                    class="text-white hover:text-jaune-500 transition-all">
+                                    <svg role="img" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 "
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <title>TikTok</title>
+                                        <path
+                                            d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+                                    </svg>
+                                </a>
+                                <a href="https://youtube.com/channel/UCZL6j4KEqqBRN2ugFQSrVVg"
+                                    class="text-white hover:text-jaune-500 transition-all">
+                                    <svg role="img" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <title>YouTube</title>
+                                        <path
+                                            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>
